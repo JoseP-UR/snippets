@@ -36,4 +36,14 @@
     "console.log(${1:message});"
   ],
   "description": "console.log(message)"
+},
+
+"echo pre printr die": {
+  "prefix": "die:pre",
+  "body": [
+    "echo '<pre>';",
+    "print_r(${1:string});",
+    "die();"
+  ],
+  "description": "echo pre printr die"
 }
