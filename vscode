@@ -1,0 +1,39 @@
+"die with print_r inside": {
+  "prefix": "die:inside",
+  "body": [
+    "die(print_r(${1:string}));"
+  ],
+  "description": "die with print_r inside"
+},
+"die with print_r outside": {
+  "prefix": "die:outside",
+  "body": [
+    "print_r(${1:string});",
+    "die();"
+  ],
+  "description": "die with print_r outside"
+},
+
+"just die": {
+  "prefix": "die:just",
+  "body": [
+    "die(${1:message});"
+  ],
+  "description": "just die"
+},
+
+"print_r": {
+  "prefix": "printr",
+  "body": [
+    "print_r(${1:string});"
+  ],
+  "description": "print_r"
+},
+
+"console.log(message)": {
+  "prefix": "clog",
+  "body": [
+    "console.log(${1:message});"
+  ],
+  "description": "console.log(message)"
+}
