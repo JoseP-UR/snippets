@@ -46,4 +46,27 @@
     "die();"
   ],
   "description": "echo pre printr die"
+},
+
+"default vue component": {
+  "prefix": "vue:component",
+  "body": [
+    "<template>",
+    "</template>",
+    "",
+    "<script>",
+    "export default {",
+    "    name: '${1:component-name}',",
+    "    data() {",
+    "        return {",
+    "",
+    "        }",
+    "    }",
+    "}",
+    "</script>",
+    "",
+    "<style>",
+    "</style>"
+  ],
+  "description": "default vue component"
 }
